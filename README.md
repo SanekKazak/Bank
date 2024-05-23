@@ -48,7 +48,6 @@ The main goals of this project are:
    - ID
    - Location
    - Description
-   - Type
 
 4. Transportation:
    - ID
