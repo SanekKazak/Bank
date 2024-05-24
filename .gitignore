@@ -2,3 +2,4 @@
 Makefile
 target/
 logs
+src/main/resources/keystore
