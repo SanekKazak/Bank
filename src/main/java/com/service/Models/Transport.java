@@ -51,7 +51,7 @@ public class Transport {
         this.characteristics = characteristics;
     }
 
-    public boolean isAvailability() {
+    public boolean getAvailability() {
         return availability;
     }
 

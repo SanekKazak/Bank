@@ -55,7 +55,7 @@ public class Driver {
         this.availability = availability;
     }
 
-    public boolean isAvailability() {
+    public boolean getAvailability() {
         return availability;
     }
 }

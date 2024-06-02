@@ -7,5 +7,6 @@ import com.service.Models.Transportation;
 
 @Repository
 public interface TransportationRepository extends JpaRepository<Transportation, Long> {
-    
+    Long countByOriginLogisticsHubId(Long id);
+    Long countByDestinationLogisticsHubId(Long id);
 }
