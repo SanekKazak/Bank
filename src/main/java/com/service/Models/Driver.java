@@ -3,21 +3,20 @@ package com.service.Models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Drivers")
+@Table(name = "drivers")
 public class Driver {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
     private Long id;
 
-    @Column(name = "Name", nullable = false)
+    @Column(nullable = false)
     private String name;
 
-    @Column(name = "ContactInformation", nullable = false)
+    @Column(nullable = false)
     private String contactInformation;
 
-    @Column(name = "Availability", nullable = false)
+    @Column(nullable = false)
     private boolean availability;
 
     public Driver() {}

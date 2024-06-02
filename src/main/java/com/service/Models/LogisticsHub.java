@@ -3,17 +3,17 @@ package com.service.Models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "LogisticsHubs")
+@Table(name = "logistics_hubs")
 public class LogisticsHub {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "Location", nullable = false)
+    @Column(nullable = false)
     private String location;
 
-    @Column(name = "Description")
+    @Column
     private String description;
 
 

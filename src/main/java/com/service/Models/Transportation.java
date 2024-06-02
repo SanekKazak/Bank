@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Transportation")
+@Table(name = "transportations")
 public class Transportation {
 
     @Id
@@ -13,28 +13,28 @@ public class Transportation {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "TransportID", updatable = false)
+    @JoinColumn(updatable = false)
     private Transport transport;
 
     @ManyToOne
-    @JoinColumn(name = "DriverID", updatable = false)
+    @JoinColumn(updatable = false)
     private Driver driver;
 
     @ManyToOne
-    @JoinColumn(name = "OriginLogisticsHubID", updatable = false)
+    @JoinColumn(updatable = false)
     private LogisticsHub originLogisticsHub;
 
     @ManyToOne
-    @JoinColumn(name = "DestinationLogisticsHubID", updatable = false)
+    @JoinColumn(updatable = false)
     private LogisticsHub destinationLogisticsHub;
 
-    @Column(name = "Cargo", nullable = false)
+    @Column(nullable = false)
     private String cargo;
 
-    @Column(name = "additionalDetails")
+    @Column
     private String additionalDetails;
 
-    @Column(name = "scheduledDate", nullable = false)
+    @Column(nullable = false)
     private Date scheduledDate;
 
     
